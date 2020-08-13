@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Sans');
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Sans-SemiBold');
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Mono');
+@import url('https://fonts.googleapis.com/css?family=IBM Plex Mono-Medium');
+
+$letters: #060A24;
+$main-color: #0000EC;
+$letters-secondary: #FFFFFF;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 44px;
+    nav{
+        ul{
+            list-style: none;
+            overflow: hidden;
+            li{
+                font-family: "IBM Plex Mono";
+                font-size: 16px;
+                padding: 6px;
+
+                a{
+                    color: $letters-secondary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+   
+}
+.logo{
+    margin: 10px;
+}
+.menu-ul {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+.menu-icon {
+  margin: 15px;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.nav-icon {
+  background: #000000;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .3s ease-out;
+  width: 18px;
+}
+  
+.nav-icon:before, .nav-icon:after {
+  background: #000000;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .3s ease-out;
+  width: 100%;
+}
+  
+.nav-icon:before {
+  top: 5px;
+}
+  
+.nav-icon:after {
+  top: -5px;
+}
+  
+.menu-btn {
+  display: none;
+}
+  
+.menu-btn:checked ~ .menu .menu-ul {
+  max-height: 240px;
+  background-color: $main-color;
+}
+  
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+  
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+  
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.introduction {
+  margin-top: 100px;
+  color: $letters;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.introduction h1{
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  padding: 3px 0px 3px 0px;
+  margin-top: 73px;
+}
+
+.introduction p {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+button{
+  font-size: 16px;
+  width: 288px;
+  height: 48px;
+  background-color: #00F3BB;
+  margin: 36px 0px 0px 0px;
+  font-family: "IBM Plex Mono";
+  border: none;
+}
+
+.world{
+  text-decoration: line-through;
+}
+
+.dot{
+  color: $main-color;
+}
+
+.parallelogram {
+  margin: 48px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  height: 1203px;
+  background: linear-gradient(180deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);    
+  transform: skewY(-3deg);
+  z-index: -5;
+  position: absolute;
+}
+
+.episode-title {
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  padding: 3px 0px 3px 0px;
+  color: $letters-secondary;
+}
+  
+.episode {
+  height: 225px;
+  width: 298px;
+}
+
+
+@media (min-width: 769px) {
+
+  .header nav ul li{
+    background-color: $letters-secondary;
+    float: left;
+  }
+  
+  .menu-ul li a {
+    color: $letters;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none; 
+  }
+
+  .menu-ul {
+    max-height: none;
+  }
+
+  .introduction p{
+    width: 628px;
+    font-size: 16px;
+  }
+
+  .introduction h1{
+    font-size: 64px;
+  }
+
+  button{
+    font-size: 18px;
+    width: 226px;
+    height: 56px;
+  }
+
+  .parallelogram {
+    height: 1042px;
+  }
+}
+
+@media (max-width: 306px){
+  button{
+      width: 102px;
+  }
+}
