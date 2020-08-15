@@ -187,6 +187,7 @@ button:hover {
   height: 225px;
   width: 298px;
   border: 0px;
+  justify-self: center;
 }
 
 .episode-grid {
@@ -293,7 +294,7 @@ footer {
   text-align: center;
   font-family: "IBM Plex Mono";
   color: #060A24;
-  margin-top: 150px;
+  margin-top: 70px;
   height: 100px;
   width: 100%;
   background-color: #FFFFFF;
@@ -304,7 +305,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 5px;
+  margin-top: 15px;
   color: #060A24;
 }
 
@@ -387,11 +388,13 @@ footer {
     margin-top: 300px;
   }
   footer {
+    margin-top: 150px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .social-media {
     justify-content: space-around;
+    width: 150px;
   }
 }
 
