@@ -111,7 +111,7 @@ header nav ul li a:active {
 }
 
 .introduction {
-  margin-top: 100px;
+  margin-top: 70px;
   color: #060A24;
   display: flex;
   flex-flow: column wrap;
@@ -142,6 +142,7 @@ button {
   margin: 36px 0px 0px 16px;
   font-family: "IBM Plex Mono";
   border: none;
+  align-self: center;
 }
 
 button:hover {
@@ -278,8 +279,6 @@ button:hover {
 
 .news-button {
   margin-top: 250px;
-  justify-self: center;
-  align-self: center;
 }
 
 .news {
@@ -309,6 +308,10 @@ footer {
   color: #060A24;
 }
 
+i {
+  color: #060A24;
+}
+
 @media (min-width: 769px) {
   .header nav ul li {
     background-color: #FFFFFF;
@@ -334,6 +337,9 @@ footer {
   }
   .introduction h1 {
     font-size: 64px;
+  }
+  .introduction button {
+    align-self: unset;
   }
   button {
     font-size: 18px;
