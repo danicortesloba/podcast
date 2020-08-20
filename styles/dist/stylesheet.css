@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=IBM Plex Sans");
-@import url("https://fonts.googleapis.com/css?family=IBM Plex Sans-SemiBold");
-@import url("https://fonts.googleapis.com/css?family=IBM Plex Mono");
-@import url("https://fonts.googleapis.com/css?family=IBM Plex Mono-Medium");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;600&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -143,6 +141,7 @@ button {
   font-family: "IBM Plex Mono";
   border: none;
   align-self: center;
+  font-weight: 500;
 }
 
 button:hover {
@@ -213,6 +212,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: justify;
+  margin-right: 16px;
 }
 
 .phone {
@@ -236,7 +236,7 @@ button:hover {
   font-size: 24px;
   color: #060A24;
   font-family: "IBM Plex Sans";
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .icon-flex {
@@ -305,14 +305,13 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 15px;
-  color: #060A24;
 }
 
 i {
   color: #060A24;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 835px) {
   .header nav ul li {
     background-color: #FFFFFF;
     float: left;
@@ -378,7 +377,7 @@ i {
     justify-content: space-around;
     text-align: center;
   }
-  .introduction h1, .about h1, .interviews h1, .topics h1, .introduction p, .about p, button, .episode-title, .icon-flex {
+  .introduction h1, .about h1, .interviews h1, .topics h1, .introduction p, .about p, button, .episode-title {
     margin-left: 100px;
   }
   .caption {
