@@ -190,7 +190,7 @@ button:hover {
 
 .episode {
   height: 225px;
-  width: 298px;
+  width: 90%;
   border: 0px;
   justify-self: center;
 }
@@ -370,6 +370,11 @@ align-self: unset;
     align-content: space-around;
     justify-content: space-between;
     justify-items: center;
+  }
+
+  .episode{
+    height: 232px;
+    width: 90%;
   }
   .phone {
     width: 457px;
